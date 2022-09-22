@@ -1,235 +1,226 @@
-.App{
-  margin-top:20px;
+.App {
+  margin-top: 20px;
 }
 
-.salfdiv{
-  font-family :"Helvetica Neue", Helvetica, Arial, "Liberation Sans", Roboto, Noto, sans-serif;
-  background: 
-  #e8f3fc;
- padding-left:40px
+.salfdiv {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", Roboto,
+    Noto, sans-serif;
+  background: #e8f3fc;
+  padding-left: 40px;
 }
-.salmdiv{
-  display:flex;
-  width:100%
+.salmdiv {
+  display: flex;
+  width: 100%;
 }
-.salfdiv>h1{
+.salfdiv > h1 {
   text-align: left;
 
-  line-height:35px;
-font-size:28px;
-letter-spacing:-0.12px;
-margin:30px 0px 4px;
-padding:0px 0px;
-font-weight:700;
-text-decoration:
-none solid rgb(45, 45, 45);
-font-family :
-"Noto Sans", "Helvetica Neue", Helvetica, Arial, "Liberation Sans", Roboto, Noto, sans-serif
+  line-height: 35px;
+  font-size: 28px;
+  letter-spacing: -0.12px;
+  margin: 30px 0px 4px;
+  padding: 0px 0px;
+  font-weight: 700;
+  text-decoration: none solid rgb(45, 45, 45);
+  font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial,
+    "Liberation Sans", Roboto, Noto, sans-serif;
 }
-.salfdiv>span{
-  font-size:16px;
-line-height:21px;
-margin:0px 0px 16px;
-font-weight:400;
+.salfdiv > span {
+  font-size: 16px;
+  line-height: 21px;
+  margin: 0px 0px 16px;
+  font-weight: 400;
 }
-input{
-  font-size:16px;
-line-height:24px;
-padding:9px 12px;
-border-radius: 10px;
-outline:1px solid gray
-
-
+input {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 9px 12px;
+  border-radius: 10px;
+  outline: 1px solid gray;
 }
 input:focus {
-  
-  border-bottom:3px solid blue;
+  border-bottom: 3px solid blue;
 }
-.salbut{
-  background-color:
-  #2557a7;
-  color:white;
+.salbut {
+  background-color: #2557a7;
+  color: white;
   font-size: 20px;
-  padding:8px;
-  width:150px;
-  font-weight:500;
-  margin-top:22px;
+  padding: 8px;
+  width: 150px;
+  font-weight: 500;
+  margin-top: 22px;
   border-radius: 10px;
 }
-.salbut:hover{
-  background-color:
-  #2a69ce;
+.salbut:hover {
+  background-color: #2a69ce;
 }
-.saldisdiv{
-  display:flex;
-  gap:20px;
-  margin-top:40px;
+.saldisdiv {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
   background-color: white;
- padding:30px ;
- border-radius:10px;
- border:10px solid 
- #9bb1f0;
- border-right: none;
- border-left:none;
- border-bottom: none;
+  padding: 30px;
+  border-radius: 10px;
+  border: 10px solid #9bb1f0;
+  border-right: none;
+  border-left: none;
+  border-bottom: none;
 }
-.salinddiv{
-   margin-top:30px;
-   margin-bottom:30px;
-   display:grid;
-   grid-template-columns: repeat(4,1fr);
-   gap:15px;
-   width:97%;
+.salinddiv {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  width: 97%;
 }
-.salinddiv>div{
-  padding:15px;
-  cursor:pointer;
+.salinddiv > div {
+  padding: 15px;
+  cursor: pointer;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
-.salinddiv>div>h2{
+.salinddiv > div > h2 {
   text-decoration: underline;
 }
-.salinddiv>div>h2:hover{
-  text-decoration:none
+.salinddiv > div > h2:hover {
+  text-decoration: none;
 }
-.salinddiv>div>div{
-  text-decoration:underline
+.salinddiv > div > div {
+  text-decoration: underline;
 }
-.salinddiv>div>div:hover{
-  text-decoration:none
+.salinddiv > div > div:hover {
+  text-decoration: none;
 }
 
-.sacompddiv{
-  margin-top:30px;
-  margin-bottom:30px;
-  display:grid;
-  grid-template-columns: repeat(3,1fr);
-  gap:15px;
-  width:97%
- 
+.sacompddiv {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  width: 97%;
 }
-.sacompddiv>div{
-  padding:20px;
+.sacompddiv > div {
+  padding: 20px;
   cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
-.sacompddiv>div:hover{
-  text-decoration:none
+.sacompddiv > div:hover {
+  text-decoration: none;
 }
-.sacompddiv>div>div>p{
+.sacompddiv > div > div > p {
   font-weight: 700;
 }
-.sacompddiv>div p{
-  text-decoration:underline ;
+.sacompddiv > div p {
+  text-decoration: underline;
 }
-.sacompddiv>div p:hover{
-  text-decoration:none;
-  color:#6f6f6f
+.sacompddiv > div p:hover {
+  text-decoration: none;
+  color: #6f6f6f;
 }
-.eardiv{
-  display:flex;
-  gap:80px;
-  margin-top:80px;
-  box-shadow: rgba(151, 150, 150, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
-  width:97%;
-  padding:5px 10px 30px 20px;
-  border-radius:10px;
-   margin-bottom:80px;
-}
-.eardiv>div{
-  margin-top:40px;
-  width:50%;
-}
-.eardiv>div button{
-  background: #085ff7;
-  color:white;
-  padding:10px ;
+.eardiv {
+  display: flex;
+  gap: 80px;
+  margin-top: 80px;
+  box-shadow: rgba(151, 150, 150, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+  width: 97%;
+  padding: 5px 10px 30px 20px;
   border-radius: 10px;
-  font-weight:600;
+  margin-bottom: 80px;
 }
-.eardiv>div button:hover{
+.eardiv > div {
+  margin-top: 40px;
+  width: 50%;
+}
+.eardiv > div button {
+  background: #085ff7;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+.eardiv > div button:hover {
   background: rgb(1, 9, 116);
 }
-.eardiv>div>h2{
-  margin-bottom:15px;
+.eardiv > div > h2 {
+  margin-bottom: 15px;
   font-size: 30px;
   font-weight: 700;
-line-height:33.9px;
-letter-spacing:-0.12px;
-text-decoration:none solid rgb(45, 45, 45)
+  line-height: 33.9px;
+  letter-spacing: -0.12px;
+  text-decoration: none solid rgb(45, 45, 45);
 }
-.eardiv>div>p{
-  margin-bottom:20px;
-  font-size:18px;
-line-height:24px;
-font-weight:400;
-color:
-#595959;
-text-decoration:none solid rgb(89, 89, 89)
+.eardiv > div > p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #595959;
+  text-decoration: none solid rgb(89, 89, 89);
 }
 
-.eardiv>div a{
+.eardiv > div a {
   text-decoration: underline;
-  margin-left:50px;
-  color:teal;
+  margin-left: 50px;
+  color: teal;
   cursor: pointer;
 }
 /* .ii>img:hover{
   background-color:green;
   color:white
 } */
-.ii{
-  display:flex;
-  width:97%;
-  box-shadow: rgba(151, 150, 150, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
-  padding:30px 10px 30px 10px;
-  border-radius:10px;
-  gap:515px;
-  margin-bottom:40px;
+.ii {
+  display: flex;
+  width: 97%;
+  box-shadow: rgba(151, 150, 150, 0.05) 0px 0px 0px 1px,
+    rgb(209, 213, 219) 0px 0px 0px 1px inset;
+  padding: 30px 10px 30px 10px;
+  border-radius: 10px;
+  gap: 515px;
+  margin-bottom: 40px;
 }
-.ii>div{
-display:flex;
-gap:30px
+.ii > div {
+  display: flex;
+  gap: 30px;
 }
-.ii>h2{
-  margin-bottom:15px;
+.ii > h2 {
+  margin-bottom: 15px;
   font-size: 30px;
   font-weight: 700;
-line-height:33.9px;
-letter-spacing:-0.12px;
-text-decoration:none solid rgb(45, 45, 45)
+  line-height: 33.9px;
+  letter-spacing: -0.12px;
+  text-decoration: none solid rgb(45, 45, 45);
 }
-.secfooterdiv{
-  display:flex;
+.secfooterdiv {
+  display: flex;
   justify-content: space-between;
-  width:80%;
+  width: 80%;
   margin-left: 50px;
- 
 }
-.secfooterdiv>div>ul>li{
+.secfooterdiv > div > ul > li {
   list-style: none;
-  line-height:30px;
-  font-weight:400;
-font-size:15px;
-cursor:pointer;
+  line-height: 30px;
+  font-weight: 400;
+  font-size: 15px;
+  cursor: pointer;
 }
-.secfooterdiv>div>ul>li:hover{
+.secfooterdiv > div > ul > li:hover {
   text-decoration: underline;
 }
-.secfooterdiv>div>h2{
-  
+.secfooterdiv > div > h2 {
   font-size: 25px;
   font-weight: 600;
-line-height:33.9px;
-letter-spacing:-0.12px;
-text-decoration:none solid rgb(45, 45, 45)
+  line-height: 33.9px;
+  letter-spacing: -0.12px;
+  text-decoration: none solid rgb(45, 45, 45);
 }
-.mainsecfooterdiv{
+.mainsecfooterdiv {
   background: #eff2f6;
-  padding-top:20px;
-  padding-bottom:20px;
-  font-family:
-"Helvetica Neue", Helvetica, Arial, "Liberation Sans", Roboto, Noto, sans-serif
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", Roboto,
+    Noto, sans-serif;
 }

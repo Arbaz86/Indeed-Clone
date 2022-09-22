@@ -4,7 +4,6 @@ import {
   Box,
   Flex,
   Text,
-  FormLabel,
   Center,
   Container,
   Button,
@@ -99,14 +98,19 @@ const CompareRating = () => {
 
   let ReviewsComponent = () => {
     return (
-      <Flex gap="20%" padding='10px 0px 20px 0px '>
+      <Flex gap="20%" padding="10px 0px 20px 0px ">
         <Box>
-          <Flex padding='0px 0px 5px 0px '>
-           <Center> <Heading  fontSize="sm">4.0</Heading> <AiFillStar color="purple" />
-            <Text fontSize="sm">on 20 July 2022</Text></Center>
-          </Flex >
-          <Heading padding='0px 0px 10px 0px ' fontSize="md">Competitive and Learning</Heading>
-          <Flex fontSize="10px" padding='0px 0px 5px 0px '>
+          <Flex padding="0px 0px 5px 0px ">
+            <Center>
+              {" "}
+              <Heading fontSize="sm">4.0</Heading> <AiFillStar color="purple" />
+              <Text fontSize="sm">on 20 July 2022</Text>
+            </Center>
+          </Flex>
+          <Heading padding="0px 0px 10px 0px " fontSize="md">
+            Competitive and Learning
+          </Heading>
+          <Flex fontSize="10px" padding="0px 0px 5px 0px ">
             <FaUserCircle />
             <Text>
               Software Development Engineer Intern(Current Employee) - Chennai,
@@ -121,12 +125,17 @@ const CompareRating = () => {
           </Text>
         </Box>
         <Box>
-          <Flex padding='0px 0px 5px 0px '>
-           <Center> <Heading  fontSize="sm">4.0</Heading> <AiFillStar color="purple" />
-            <Text fontSize="sm">on 20 July 2022</Text></Center>
-          </Flex >
-          <Heading padding='0px 0px 10px 0px ' fontSize="md">Competitive and Learning</Heading>
-          <Flex fontSize="10px" padding='0px 0px 5px 0px '>
+          <Flex padding="0px 0px 5px 0px ">
+            <Center>
+              {" "}
+              <Heading fontSize="sm">4.0</Heading> <AiFillStar color="purple" />
+              <Text fontSize="sm">on 20 July 2022</Text>
+            </Center>
+          </Flex>
+          <Heading padding="0px 0px 10px 0px " fontSize="md">
+            Competitive and Learning
+          </Heading>
+          <Flex fontSize="10px" padding="0px 0px 5px 0px ">
             <FaUserCircle />
             <Text>
               Software Development Engineer Intern(Current Employee) - Chennai,
@@ -145,7 +154,7 @@ const CompareRating = () => {
   };
 
   return (
-    <Container maxW="100%" margin='0px 0px 50px 0px'>
+    <Container maxW="100%" margin="0px 0px 50px 0px">
       <Heading>Compare company ratings</Heading>
       <Text marginBottom="30px">
         Compare management, culture and compensation ratings for Samsung
@@ -181,9 +190,13 @@ const CompareRating = () => {
       <ReviewsComponent />
       <ReviewsComponent />
       <ReviewsComponent />
-      <Flex gap='50%'>
-        <Button color='brandColor'size='lg' variant='outline'>See all reviews</Button>
-        <Button color='brandColor' size='lg' variant='outline'>See all reviews</Button>
+      <Flex gap="50%">
+        <Button color="brandColor" size="lg" variant="outline">
+          See all reviews
+        </Button>
+        <Button color="brandColor" size="lg" variant="outline">
+          See all reviews
+        </Button>
       </Flex>
     </Container>
   );

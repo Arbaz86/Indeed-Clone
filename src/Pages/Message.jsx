@@ -6,20 +6,20 @@ import {
   Heading,
   Image,
   Select,
-} from '@chakra-ui/react';
-import React, { useState } from 'react';
-import Messages from '../images/message.png';
-import Archive from '../images/Archive.png';
-import Spam from '../images/spam.png';
-import { useNavigate } from 'react-router-dom';
+} from "@chakra-ui/react";
+import React, { useState } from "react";
+import Messages from "../images/message.png";
+import Archive from "../images/Archive.png";
+import Spam from "../images/spam.png";
+import { useNavigate } from "react-router-dom";
 
 const Message = () => {
   const [currentValue, setCurrentValue] = useState(0);
   const navigate = useNavigate();
   const buttonHandler = () => {
-    navigate('/', { replace: true });
+    navigate("/", { replace: true });
   };
-  console.log('Current Value', currentValue);
+  console.log("Current Value", currentValue);
   return (
     <Box marginTop="-27px">
       <Container maxW="100%" backgroundColor="#f3f2f1">
@@ -57,7 +57,7 @@ const Message = () => {
               borderRadius="10px"
               backgroundColor="white"
             >
-              {currentValue === 'inbox' ? (
+              {currentValue === "inbox" ? (
                 <Box margin="18%" h="400px">
                   <Image marginLeft="35%" width="180px" src={Messages} />
 
@@ -81,7 +81,7 @@ const Message = () => {
                       w="300px"
                       backgroundColor="#2557a7"
                       color="#FFFFFF"
-                      _hover={{ color: 'white', backgroundColor: '#103673' }}
+                      _hover={{ color: "white", backgroundColor: "#103673" }}
                     >
                       Find Jobs
                     </Button>
@@ -116,13 +116,13 @@ const Message = () => {
                         w="300px"
                         backgroundColor="#2557a7"
                         color="#FFFFFF"
-                        _hover={{ color: 'white', backgroundColor: '#103673' }}
+                        _hover={{ color: "white", backgroundColor: "#103673" }}
                       >
                         Find Jobs
                       </Button>
                     </Box>
                   </Box>
-                ) && currentValue === 'archive' ? (
+                ) && currentValue === "archive" ? (
                 <Box margin="18%" h="400px">
                   <Image marginLeft="35%" width="180px" src={Archive} />
 
@@ -143,7 +143,7 @@ const Message = () => {
                       w="300px"
                       backgroundColor="#2557a7"
                       color="#FFFFFF"
-                      _hover={{ color: 'white', backgroundColor: '#103673' }}
+                      _hover={{ color: "white", backgroundColor: "#103673" }}
                     >
                       Find Jobs
                     </Button>
@@ -178,13 +178,13 @@ const Message = () => {
                         w="300px"
                         backgroundColor="#2557a7"
                         color="#FFFFFF"
-                        _hover={{ color: 'white', backgroundColor: '#103673' }}
+                        _hover={{ color: "white", backgroundColor: "#103673" }}
                       >
                         Find Jobs
                       </Button>
                     </Box>
                   </Box>
-                ) && currentValue === 'spam' ? (
+                ) && currentValue === "spam" ? (
                 <Box margin="18%" h="400px">
                   <Image marginLeft="35%" width="180px" src={Spam} />
                   <Box>
@@ -204,7 +204,7 @@ const Message = () => {
                       w="300px"
                       backgroundColor="#2557a7"
                       color="#FFFFFF"
-                      _hover={{ color: 'white', backgroundColor: '#103673' }}
+                      _hover={{ color: "white", backgroundColor: "#103673" }}
                     >
                       Find Jobs
                     </Button>
@@ -234,7 +234,7 @@ const Message = () => {
                       w="300px"
                       backgroundColor="#2557a7"
                       color="#FFFFFF"
-                      _hover={{ color: 'white', backgroundColor: '#103673' }}
+                      _hover={{ color: "white", backgroundColor: "#103673" }}
                     >
                       Find Jobs
                     </Button>

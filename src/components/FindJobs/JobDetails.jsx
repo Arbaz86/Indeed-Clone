@@ -1,9 +1,8 @@
-import React, { useEffect} from "react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import {  getSingleJobs } from "../../redux/appReducer/actions";
+import { getSingleJobs } from "../../redux/appReducer/actions";
 import { Box, Flex, Text, Icon, Button } from "@chakra-ui/react";
 import { MdMoney, MdOutlineAllInbox } from "react-icons/md";
-import Parser from "html-react-parser";
 import { Link } from "react-router-dom";
 
 const JobDetails = () => {
@@ -64,7 +63,11 @@ const JobDetails = () => {
                 <Box marginLeft=".2rem">{details.jobType}</Box>
               </Flex>
             </Flex>
-            <Link to='/applyjobs'><Button margin='1rem 1rem 1rem 1rem' colorScheme='blue'>Apply Now</Button></Link>
+            <Link to="/applyjobs">
+              <Button margin="1rem 1rem 1rem 1rem" colorScheme="blue">
+                Apply Now
+              </Button>
+            </Link>
             <Box fontSize=".8rem" color="gray" margin="1rem 1rem 1rem 1rem">
               {/* {Parser(details.jobDescription)} */}
             </Box>

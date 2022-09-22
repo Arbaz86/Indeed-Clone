@@ -1,13 +1,13 @@
-import * as types from './actionType';
-import axios from 'axios';
+import * as types from "./actionType";
+import axios from "axios";
 
 const register = (payload) => (dispatch) => {
-  console.log('payload:', payload);
+  console.log("payload:", payload);
 
   dispatch({ type: types.REGISTER_REQUEST });
 
   return axios
-    .post('https://authentication-aru.herokuapp.com/register', payload)
+    .post("https://authentication-aru.herokuapp.com/register", payload)
     .then((r) => {
       dispatch({ type: types.REGISTER_SUCCESS, payload: r.data });
       return types.REGISTER_SUCCESS;
@@ -22,7 +22,7 @@ const login = (params) => (dispatch) => {
   dispatch({ type: types.LOGIN_REQUEST });
 
   return axios
-    .post('https://authentication-aru.herokuapp.com/login', params)
+    .post("https://authentication-aru.herokuapp.com/login", params)
     .then((r) => {
       dispatch({ type: types.LOGIN_SUCCESS, payload: r.data });
       return types.LOGIN_SUCCESS;
@@ -33,7 +33,7 @@ const login = (params) => (dispatch) => {
     });
 };
 
-const logout=()=>(dispatch)=>{
-dispatch({ type: types.LOGOUT_REQUEST });
-}
+const logout = () => (dispatch) => {
+  dispatch({ type: types.LOGOUT_REQUEST });
+};
 export { register, login, logout };

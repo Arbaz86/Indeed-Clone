@@ -1,19 +1,15 @@
-import './App.css';
-import Navbar from './components/Navbar/Navbar'
-import AllRouter from './components/Routes/AllRouter';
-import Chakrafooter from './components/salaryguide/Salarymainfooter'
+import "./App.css";
+import Navbar from "./components/Navbar/Navbar";
+import AllRouter from "./components/Routes/AllRouter";
+import Chakrafooter from "./components/salaryguide/Salarymainfooter";
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <AllRouter/>
+      <AllRouter />
 
-
-
-      <Chakrafooter/>
-
+      <Chakrafooter />
     </div>
-
   );
 }
 

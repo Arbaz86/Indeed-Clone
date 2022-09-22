@@ -1,9 +1,7 @@
 import {
   Box,
   Flex,
-  Grid,
   Heading,
-  Icon,
   Image,
   Link,
   Text,
@@ -11,7 +9,6 @@ import {
   useMediaQuery,
 } from "@chakra-ui/react";
 import React from "react";
-import { BsArrowRight } from "react-icons/bs";
 
 const articleData = [
   {

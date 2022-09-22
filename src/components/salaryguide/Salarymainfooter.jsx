@@ -5,14 +5,13 @@ import {
   Stack,
   Heading,
   List,
-  Link,
   Icon,
   ListItem,
 } from "@chakra-ui/react";
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 const Chakrafooter = () => {
   return (
-    <Box bg="black" padding="50px" fontFamily="Helvetica Neue" width="100%" >
+    <Box bg="black" padding="50px" fontFamily="Helvetica Neue" width="100%">
       <Box
         display={{ sm: "block", md: "flex" }}
         justifyContent="space-between"

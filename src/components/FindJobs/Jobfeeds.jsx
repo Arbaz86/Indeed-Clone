@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getJobs } from "../../redux/appReducer/actions";
@@ -7,23 +6,20 @@ import { MdMoney, MdOutlineAllInbox } from "react-icons/md";
 import Parser from "html-react-parser";
 import { Link } from "react-router-dom";
 
-
-
-
 const Jobfeeds = () => {
-  const [jobId, setJobId]=useState(0);
+  const [jobId, setJobId] = useState(0);
   const dispatch = useDispatch();
   const jobs = useSelector((state) => state.appReducer.jobs);
-  localStorage.setItem("jobId2",jobId)
+  localStorage.setItem("jobId2", jobId);
   useEffect(() => {
     dispatch(getJobs());
   }, [dispatch]);
-  
+
   return (
     <Box color="grey.100">
       {jobs.map((item) => {
         return (
-          <Link key={item.id} onClick={()=>setJobId(item.id)}  to="/">
+          <Link key={item.id} onClick={() => setJobId(item.id)} to="/">
             <Box
               key={item.id}
               borderRadius="md"

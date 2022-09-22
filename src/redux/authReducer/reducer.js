@@ -1,9 +1,9 @@
-import { getLocalData, saveLocalData } from '../../utils/localStorage';
-import * as types from './actionType';
+import { getLocalData, saveLocalData } from "../../utils/localStorage";
+import * as types from "./actionType";
 
 const initState = {
-  isAuth: getLocalData("token")?true: false,
-  token: getLocalData("token") || '',
+  isAuth: getLocalData("token") ? true : false,
+  token: getLocalData("token") || "",
   isLoading: false,
   isError: false,
 };
@@ -34,7 +34,7 @@ const reducer = (state = initState, action) => {
         isLoading: true,
       };
     case types.LOGIN_SUCCESS:
-      saveLocalData('token', JSON.stringify(payload));
+      saveLocalData("token", JSON.stringify(payload));
       return {
         ...state,
         isLoading: false,
@@ -47,7 +47,7 @@ const reducer = (state = initState, action) => {
         isLoading: false,
         isError: true,
         isAuth: false,
-        token: '',
+        token: "",
       };
     case types.LOGOUT_REQUEST:
       return {
@@ -55,7 +55,7 @@ const reducer = (state = initState, action) => {
         isLoading: false,
         isError: false,
         isAuth: false,
-        token: '',
+        token: "",
       };
 
     default:

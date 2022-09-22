@@ -1,4 +1,4 @@
-import { EditIcon } from '@chakra-ui/icons';
+import { EditIcon } from "@chakra-ui/icons";
 import {
   Avatar,
   Wrap,
@@ -16,26 +16,26 @@ import {
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
-} from '@chakra-ui/react';
-import React, { useEffect, useState } from 'react';
-import LocationIcon from '../components/Navbar/Icons/location.svg';
+} from "@chakra-ui/react";
+import React, { useEffect, useState } from "react";
+import LocationIcon from "../components/Navbar/Icons/location.svg";
 
 const Profile = () => {
   const [user, setUser] = useState([]);
-  const [iconName, setIconName] = useState('');
+  const [iconName, setIconName] = useState("");
   const Name = iconName.toLocaleLowerCase();
-  console.log('Name:', Name)
+  console.log("Name:", Name);
 
   useEffect(() => {
-    if (localStorage.hasOwnProperty('token')) {
-      let value = localStorage.getItem('token');
+    if (localStorage.hasOwnProperty("token")) {
+      let value = localStorage.getItem("token");
       value = JSON.parse(value);
       setUser(value.user);
     }
   }, []);
   useEffect(() => {
-    setIconName(user.name+"   "+" -");
-  },[user]);
+    setIconName(user.name + "   " + " -");
+  }, [user]);
 
   return (
     <Box>

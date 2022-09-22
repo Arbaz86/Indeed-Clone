@@ -1,12 +1,12 @@
-import { Box, Button, Container, Flex, Heading, Image } from '@chakra-ui/react';
-import React from 'react'
-import { useNavigate } from 'react-router-dom';
-import NotifyImage  from '../images/notification.png';
+import { Box, Button, Container, Flex, Heading, Image } from "@chakra-ui/react";
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import NotifyImage from "../images/notification.png";
 const Notification = () => {
-   const navigate = useNavigate();
-   const buttonHandler = () => {
-     navigate('/', { replace: true });
-   };
+  const navigate = useNavigate();
+  const buttonHandler = () => {
+    navigate("/", { replace: true });
+  };
   return (
     <Box marginTop="-27px">
       <Container maxW="100%" backgroundColor="#f3f2f1">
@@ -35,7 +35,7 @@ const Notification = () => {
                 w="300px"
                 backgroundColor="#2557a7"
                 color="#FFFFFF"
-                _hover={{ color: 'white', backgroundColor: '#103673' }}
+                _hover={{ color: "white", backgroundColor: "#103673" }}
               >
                 Find Jobs
               </Button>
@@ -45,6 +45,6 @@ const Notification = () => {
       </Container>
     </Box>
   );
-}
+};
 
-export default Notification
+export default Notification;

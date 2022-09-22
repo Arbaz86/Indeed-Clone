@@ -15,27 +15,29 @@ import { useSelector } from "react-redux";
 import { FaBalanceScaleRight } from "react-icons/fa";
 const CompareHeader = () => {
   const { data } = useSelector((state) => state.appReducer);
-  const company = data.find((c) => c.id == 6);
+  const company = data.find((c) => c.id === 6);
   return (
-    <Container maxW='100%' margin='10px 0px 50px 0px'>
-      <Flex gap='10px'>
+    <Container maxW="100%" margin="10px 0px 50px 0px">
+      <Flex gap="10px">
         <Box>
           <Heading size="lg" color="gray">
             Compare working at
           </Heading>
-          <Heading size="2xl" margin='10px 0px 20px 0px' >Samsung Electronics vs Qualcomm</Heading>
+          <Heading size="2xl" margin="10px 0px 20px 0px">
+            Samsung Electronics vs Qualcomm
+          </Heading>
           <Text fontSize="lg">
             Compare company reviews, salaries and ratings to find out if Samsung
             Electronics or Qualcomm is right for you. Samsung Electronics is
             most highly rated for Compensation and benefits and Qualcomm is most
             highly rated for Compensation and benefits.
           </Text>
-          <Text fontSize="lg" margin='20px 0px 30px 0px'>
+          <Text fontSize="lg" margin="20px 0px 30px 0px">
             Learn more, read reviews and see open jobs
           </Text>
         </Box>
-        <Box color='brandColor'>
-          <FaBalanceScaleRight margin="0px" padding="0px" fontSize="300px"  />
+        <Box color="brandColor">
+          <FaBalanceScaleRight margin="0px" padding="0px" fontSize="300px" />
         </Box>
       </Flex>
       <Flex gap="20px">

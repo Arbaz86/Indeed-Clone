@@ -7,7 +7,7 @@ import {
   TabPanel,
 } from "@chakra-ui/react";
 import React from "react";
-import { useParams, Link, Outlet } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import LandingHeader from "../components/CompanyLandingPage/LandingHeader";
 import Snapshot from "../components/CompanyLandingPage/Tabs/Snapshot";
 import WhyUS from "../components/CompanyLandingPage/Tabs/WhyUS";
@@ -36,8 +36,8 @@ const CompanyLandingPage = () => {
           <Tab>Photos</Tab>
         </TabList>
 
-        <TabPanels >
-          <TabPanel >
+        <TabPanels>
+          <TabPanel>
             <Snapshot />{" "}
           </TabPanel>
           <TabPanel>
@@ -63,7 +63,6 @@ const CompanyLandingPage = () => {
           </TabPanel>
         </TabPanels>
       </Tabs>
-      
     </Container>
   );
 };

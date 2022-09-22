@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   Box,
   Tabs,
@@ -10,22 +10,22 @@ import {
   Divider,
   Button,
   useToast,
-} from '@chakra-ui/react';
-import './Navbar.css';
-import Indeed from './Icons/indeed.svg';
-import Message from './Icons/message.svg';
-import Notification from './Icons/notification.svg';
-import Profile from './Icons/profile.svg';
-import ProfileResume from './Icons/profileResume.svg';
-import Settings from './Icons/Settings.svg';
-import MyReviews from './Icons/myReviews.svg';
-import MyJobs from './Icons/myjobs.svg';
-import HelpCenter from './Icons/helpCentre.svg';
-import EmailSettings from './Icons/emailSettings.svg';
-import UkrenSupport from './Icons/ukraine_support.png';
-import { NavLink } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
-import { logout } from '../../redux/authReducer/actions';
+} from "@chakra-ui/react";
+import "./Navbar.css";
+import Indeed from "./Icons/indeed.svg";
+import Message from "./Icons/message.svg";
+import Notification from "./Icons/notification.svg";
+import Profile from "./Icons/profile.svg";
+import ProfileResume from "./Icons/profileResume.svg";
+import Settings from "./Icons/Settings.svg";
+import MyReviews from "./Icons/myReviews.svg";
+import MyJobs from "./Icons/myjobs.svg";
+import HelpCenter from "./Icons/helpCentre.svg";
+import EmailSettings from "./Icons/emailSettings.svg";
+import UkrenSupport from "./Icons/ukraine_support.png";
+import { NavLink } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { logout } from "../../redux/authReducer/actions";
 
 const Navbar = () => {
   const [profile, setProfile] = useState(false);
@@ -33,15 +33,15 @@ const Navbar = () => {
   const toast = useToast();
 
   const logoutHandler = () => {
-    localStorage.removeItem('token');
+    localStorage.removeItem("token");
     dispatch(logout());
     toast({
-      title: 'Log Out Successful 👋',
-      description: 'Visit again 🙏',
-      status: 'success',
+      title: "Log Out Successful 👋",
+      description: "Visit again 🙏",
+      status: "success",
       duration: 3000,
       isClosable: true,
-      position: 'top',
+      position: "top",
     });
   };
 
@@ -70,9 +70,9 @@ const Navbar = () => {
                   <Tab
                     marginTop="12px"
                     _hover={{
-                      marginTop: '12px',
-                      borderBottom: '2px solid #2f5eaa',
-                      color: '#2f5eaa',
+                      marginTop: "12px",
+                      borderBottom: "2px solid #2f5eaa",
+                      color: "#2f5eaa",
                     }}
                   >
                     FindJobs
@@ -82,9 +82,9 @@ const Navbar = () => {
                   <Tab
                     marginTop="12px"
                     _hover={{
-                      marginTop: '12px',
-                      borderBottom: '2px solid #2f5eaa',
-                      color: '#2f5eaa',
+                      marginTop: "12px",
+                      borderBottom: "2px solid #2f5eaa",
+                      color: "#2f5eaa",
                     }}
                   >
                     Company reviews
@@ -94,9 +94,9 @@ const Navbar = () => {
                   <Tab
                     marginTop="12px"
                     _hover={{
-                      marginTop: '12px',
-                      borderBottom: '2px solid #2f5eaa',
-                      color: '#2f5eaa',
+                      marginTop: "12px",
+                      borderBottom: "2px solid #2f5eaa",
+                      color: "#2f5eaa",
                     }}
                   >
                     Salary Guide
@@ -113,9 +113,9 @@ const Navbar = () => {
                 <Tab
                   marginTop="11px"
                   _hover={{
-                    marginTop: '11px',
-                    borderBottom: '2px solid #2f5eaa',
-                    color: '#2f5eaa',
+                    marginTop: "11px",
+                    borderBottom: "2px solid #2f5eaa",
+                    color: "#2f5eaa",
                   }}
                 >
                   <img
@@ -130,9 +130,9 @@ const Navbar = () => {
                 <Tab
                   marginTop="11px"
                   _hover={{
-                    marginTop: '11px',
-                    borderBottom: '2px solid #2f5eaa',
-                    color: '#2f5eaa',
+                    marginTop: "11px",
+                    borderBottom: "2px solid #2f5eaa",
+                    color: "#2f5eaa",
                   }}
                 >
                   <img
@@ -150,9 +150,9 @@ const Navbar = () => {
                 className="profile"
                 marginTop="10px"
                 _hover={{
-                  marginTop: '10px',
-                  borderBottom: '2px solid #2f5eaa',
-                  color: '#2f5eaa',
+                  marginTop: "10px",
+                  borderBottom: "2px solid #2f5eaa",
+                  color: "#2f5eaa",
                 }}
               >
                 <img
@@ -167,14 +167,14 @@ const Navbar = () => {
                 className="slideCorner"
                 style={{
                   opacity: profile ? 1 : 0,
-                  pointerEvents: profile ? 'all' : 'none',
+                  pointerEvents: profile ? "all" : "none",
                 }}
               ></Box>
               <Box
                 className="profileSlide"
                 style={{
                   opacity: profile ? 1 : 0,
-                  pointerEvents: profile ? 'all' : 'none',
+                  pointerEvents: profile ? "all" : "none",
                 }}
               >
                 <List>
@@ -275,9 +275,9 @@ const Navbar = () => {
                 <Tab
                   marginTop="12px"
                   _hover={{
-                    marginTop: '12px',
-                    borderBottom: '2px solid #2f5eaa',
-                    color: '#2f5eaa',
+                    marginTop: "12px",
+                    borderBottom: "2px solid #2f5eaa",
+                    color: "#2f5eaa",
                   }}
                 >
                   Employers / Post Job
