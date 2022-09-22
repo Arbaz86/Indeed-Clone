@@ -8,7 +8,7 @@ Project: Make a clone of Indeed website.
 
 Original-Website: https://in.indeed.com/
 
-Cloned-Website: https://indeed-ten.vercel.app/
+Cloned-Website: https://indeed-clone-web.netlify.app/
 
 Indeed is the #1 job site in the world1 with over 250M unique visitors every month. Indeed strives to put job seekers first, giving them free access to search for jobs, post resumes, and research companies.
 
